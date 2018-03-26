@@ -136,3 +136,37 @@ function max(Array){
 	});
 	return biggest;
 }
+//Movie DB
+var movieDB = [
+	{
+		title: "Kimi no na wa",
+		rating: 5,
+		hasWatched: true
+	},
+	{
+		title: "Avengers",
+		rating: 3,
+		hasWatched: true
+	},
+	{
+		title: "Black Panther",
+		rating: 4,
+		hasWatched: false
+	},
+	{
+		title: "Frozen",
+		rating: 2,
+		hasWatched: false
+	}
+];
+
+function printMovies(arr){
+	arr.forEach(function(movie){
+		if(movie.hasWatched == true){
+			console.log("You have seen " + movie.title + " - " + movie.rating + " stars");
+		}
+		else{
+			console.log("You have not seen " + movie.title + " - " + movie.rating + " stars");
+		}
+	});
+}
