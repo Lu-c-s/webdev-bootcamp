@@ -108,22 +108,23 @@ function kebabToSnake(word){
 //Array
 
 function printReverse(Array){
-	for(var i = array.lenth ; i >= 0 ; i--){
+	for(var i = array.length - 1; i >= 0 ; i--){
 		console.log(Array[i]);
 	}
 }
 function isUniform(Array){
 	var first = Array[0];
-	Array.forEach(function(n){
+	for(var i = 1 ; i < Array.length; i++){
 		if(n !== first){
 			return false;
 		}
-	});
+	}
+	return true;
 }
 function sumArray(Array){
 	total = 0;
 	Array.forEach(function(number){
-		total = total + number;
+		total += number;
 	});
 	return total;
 }
